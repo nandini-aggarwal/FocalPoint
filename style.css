@@ -1,0 +1,44 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center
+  padding: 200px
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+@media (max-width:1028px) {
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+
+  #title {
+    text-align: center;
+  }
+
+
+}
