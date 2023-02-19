@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <body>
+    <p> Select the format of your neuroimaging scan: </p>
+  </body>
+  <label for="exampleDataList" class="form-label">See options below:</label>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+    <datalist id="datalistOptions">
+    <option value="MRI Scan">
+    <option value="fMRI Scan">
+    <option value="CT Scan">
+    <option value="DTI Scan">
+    <option value="PET Scan">
+    </datalist>
+
+    <p> Upload Files Here: </p>
+
+  <div class="mb-3">
+  <form enctype = "multipart/form-data" action = "/upload" method = "post">
+   <p>File: <input type = "file" name = "filename" /></p>
+   <p><input type = "submit" value = "Upload" /></p>
+</form>
+</div>
+{% endblock %}
