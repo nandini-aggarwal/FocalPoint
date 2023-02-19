@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1> Symptom Diagnosis and Treatment Test</h1>
+  <form method = 'POST'>
+    <div class="container">
+    {{ form.hidden_tag() }}
+    {{ form.symptom1.label}} {{form.symptom1}}
+    <br>
+    {{ form.symptom2.label}} {{form.symptom2}}
+    <br>
+    {{ form.symptom3.label}} {{form.symptom3}}
+    <br>
+    {{ form.symptom4.label}} {{form.symptom4}}
+    <br>
+    {{ form.symptom5.label}} {{form.symptom5}}
+    <br>
+    {{ form.symptom6.label}} {{form.symptom6}}
+    <br>
+    {{ form.symptom7.label}} {{form.symptom7}}
+    <br>
+    {{ form.symptom8.label}} {{form.symptom8}}
+    <br>
+    {{ form.symptom9.label}} {{form.symptom9}}
+    <br>
+    {{ form.symptom10.label}} {{form.symptom10}}
+    <br>
+    {{ form.symptom11.label}} {{form.symptom11}}
+    <br>
+    {{ form.symptom12.label}} {{form.symptom12}}
+    <br>
+    {{form.submit()}}
+  </form>
+{% endblock %}
