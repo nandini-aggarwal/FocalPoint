@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+{% if disease == True %}
+      <div class="jumbotron">
+  <h1 class="display-4">Your neuroimaging scans suggest the presence of a psychopathology.</h1>
+  <p class="lead">Take our state-of-the-art diagnostic test to learn which clincal symptoms you may exhibit.</p>
+  <hr class="my-4">
+  <p>Seek out an official diagnostic test from your primary healthcare provider.</p>
+</div>
+{% endif %}
+{% if disease == False %}
+      <div class="jumbotron">
+  <h1 class="display-4">Your neuroimaging scans do not suggest the presence of a psychopathology.</h1>
+  <p class="lead">Take our state-of-the-art diagnostic test to confirm that you do not exhibit any clinical symptoms.</p>
+  <hr class="my-4">
+  <p>Seek out an official diagnostic test from your primary healthcare provider to confirm any results above.</p>
+</div>
+{% endif %}
+{% endblock %}
