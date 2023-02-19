@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-n8UI0ez6B6N8VzCHaQub5uzrOoR-mL9-A&usqp=CAU');
+      height: 400px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3); height: 300px">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3" style="font-family: verdana; font-size: 300%; font-weight: bold">Focal Point</h1>
+          <h4 class="mb-3">PERSONALIZED DIAGNOSIS AND TREATMENT THAT EVOLVES WITH YOU</h4>
+          <a class="btn btn-outline-light btn-lg" href="/diagnostictest" role="button"
+          >Diagnostic Test</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section id="statistics">
+
+  <h2 class="text-center" style="font-weight: bold">We Care About You & Your Health!</h2>
+  <p class="text-center">Focal Point targets the diagnosis and treatment of mental health disorders which are prevalent in our communities today. We strive to provide access to customized diagnosis reports and treatment plans that will benefit the lives of individuals across the globe. We hope that this website will take the next step towards curing mental health disorders, and improve the lives of people in our own communities that struggle with maintaining a positive outlook on life, developing meaningful social relationships, and emotional stability.</p>
+
+  <div class="card-group">
+  <div class="card text-white bg-info mb-3">
+    <div class="card-body">
+      <h5 class="card-title text-center" style="font-size: 350%">84%</h5>
+      <p class="card-text text-center">Using our unique diagnostic testing system that targets specific symptoms, we have been able to alleviate 84% of symptoms experienced by our patients.</p>
+    </div>
+  </div>
+  <div class="card text-white bg-dark mb-3">
+    <div class="card-body">
+      <h5 class="card-title text-center" style="font-size: 350%">1500</h5>
+      <p class="card-text text-center">We have been able to accurately diagnose and successfully treat 1500 patients so far, with scope for even more.</p>
+    </div>
+  </div>
+  <div class="card text-white bg-info mb-3">
+    <div class="card-body">
+      <h5 class="card-title text-center" style="font-size: 350%">91%</h5>
+      <p class="card-text text-center">We have been able to provide 91% of our patients with unique treatment they have not been able to receive elsewhere.</p>
+    </div>
+  </div>
+</div>
+   
+  </div>
+  </section>
+{% endblock %}
