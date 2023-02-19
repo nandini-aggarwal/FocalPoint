@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+  <body>
+    <h1> Treatment Plan </h1>
+    <style>
+    h1 {color:purple;}
+    </style>
+  </body>
+  <ul>
+    <li>
+      Attention:
+      {% if attention > 1 %}
+      Attention deficiency is one of the symptoms which you display. 
+     We recommend taking psychostimulants such as Ritalin, and             participating in 30-45 minutes of physical activity per day to 
+     mitigate lack of concentration. Meet with your primary 
+     healthcare provider to discuss prescription medication.  
+      {% else %}
+      You do not exhibit clinical attention deficit symptoms. 
+      {% endif %}
+    </li>
+    <li>
+      Hyperactivity:
+      {% if hyperactivity > 1 %}
+      Hyperactivity and excessive movement is one of the symptoms 
+     which you display. We recommend Cognitive Behavioral Therapy to 
+     identify and reshape your tendencies to remain in motion, as 
+     well as using organizational tools including meditation and task 
+     trackers to improve quality of life. Meet with a local 
+     psychiatrist to discuss therapy options.
+      {% else %}
+      You do not exhibit clinical hyperactivity symptoms. 
+      {% endif %}
+    </li>
+    <li>
+      nervousness:
+      {% if nervousness > 1 %}
+      Nervousness and constant worry is one of the symptoms which you 
+      display. We recommend Acceptance and Commitment Therapy to 
+      reduce your excessive fears and work towards accepting how to 
+      manage anxiety in your daily life. In addition, you should 
+      attempt to get into a positive headspace, engage in relaxation 
+      techniques such as deep breathing, and talk to your support 
+      system to alleviate nervousness. Meet with a local psychiatrist 
+      to discuss therapy options.
+      {% else %}
+      You do not exhibit clinical symptoms of excessive worry.
+      {% endif %}
+    </li>
+    <li>
+      Fatigue:
+      {% if fatigue > 1 %}
+      Fatigue is a symptom that you exhibit based on the answers you have chosen. We recommend taking antihistamines and benzodiazepines (only if severe and prescribed by a doctor). Additionally, keeping track of your diet and sleep schedule on a daily basis will improve your quality of life and help eliminate fatigue in the long run.
+      {% else %}
+      You do not exhibit clinical fatigue-related symptoms. 
+      {% endif %}
+    </li>
+    <li>
+      Loss of Interest:
+      {% if interest > 1 %}
+      Low interest in daily activities is a symptom you exhibit based on the answers you have chosen. We recommend that you undergo Transcranial Magnetic Stimulation (TMS) if this issue is severely impacting your quality of life. Other small steps you can take to solve this issue include joining a support group and simply participating in activities with your friends and family.
+      {% else %}
+      You do not exhibit clinical loss of interest symptoms. 
+      {% endif %}
+    </li>
+    <li>
+      Low Mood:
+      {% if mood > 1 %}
+      Low mood is one of the symptoms you exhibit based on the answers you have chosen. We recommend taking selective serotonin reuptake inhibitors (SSRIs), practicing mindfulness, engaging in journaling about what you are grateful for, and participating in physical exercise such as yoga and running to improve your mood in the long run!
+      {% else %}
+      You do not exhibit clinical symptoms relating to a lowered 
+      mood. 
+      {% endif %}
+    </li>
+  </ul>
+  <li>
+    {% if adhd == True %}
+      <div class="jumbotron">
+  <h1 class="display-4">Your symptoms are most consistent with:</h1>
+  <p class="lead">Attention-deficit/hyperactivity disorder</p>
+  <hr class="my-4">
+  <p>Seek out an official diagnostic test from your primary healthcare provider.</p>
+</div>
+    {% endif %}
+
+    {% if anxiety == True %}
+      <div class="jumbotron">
+  <h1 class="display-4">Your symptoms are most consistent with:</h1>
+  <p class="lead">Generalized Anxiety Disorder</p>
+  <hr class="my-4">
+  <p>Seek out an official diagnostic test from your primary healthcare provider.</p>
+</div>
+    {% endif %}
+
+    {% if depression == True %}
+      <div class="jumbotron">
+  <h1 class="display-4">Your symptoms are most consistent with:</h1>
+  <p class="lead">Major Depressive Disorder</p>
+  <hr class="my-4">
+  <p>Seek out an official diagnostic test from your primary healthcare provider.</p>
+</div>
+    {% endif %}
+  </li>
+{% endblock %}
